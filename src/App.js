@@ -13,7 +13,7 @@ function App() {
         const data = await response.json();
         setItems(data);
       } catch (err) {
-        console.log(err);
+        console.log(err)
       }
     }
 
