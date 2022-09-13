@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Form from "./Form";
+import Lists from "./Lists";
 
 function App() {
   const API_URL = 'https://jsonplaceholder.typicode.com/';
@@ -26,6 +27,9 @@ function App() {
       <Form 
         reqType={reqType}
         setReqType={setReqType}
+      />
+      <Lists 
+        items={items}
       />
     </div>
   );
